@@ -1,0 +1,11 @@
+{
+  "name": "scroll-lenis-gsap-",
+  "version": "1.0.0",
+  "description": "scroll usings lenis and gsap",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "fabrone BITITI",
+  "license": "MIT"
+}
