@@ -18,7 +18,7 @@ html,body{
     align-items: center;
     gap: 4;
 }
-.h1 {
+/* .h1 {
     font-family: 'Host Grotesk', Sans-serif;
     font-size: 3rem;
     font-weight: 300;
@@ -30,7 +30,22 @@ html,body{
     padding: 10;
     font-size: 50px;
     margin: 10px;
-}
+} */
+
+.h1 {
+    font-family: 'Host Grotesk', Sans-serif;
+    font-weight: 300;
+    font-size: 100px;
+    line-height: 1.1;
+  }
+  
+  .p {
+    font-family: 'Courier New', Courier, monospace;
+    padding: 10px; /* added unit */
+    font-size: 50px;
+    margin: 10px;
+  }
+
 
 section{
     display: grid;
@@ -117,3 +132,54 @@ section{
     border-right: 1px solid rgb(242, 242, 242);
   }
   
+/* Responsive breakpoints */
+@media (max-width: 599px) {
+    section {
+      grid-template-columns: 1fr;
+      height: auto;
+    }
+    .img {
+      height: 300px;
+    }
+    .h1 {
+      font-size: 40px;
+    }
+    .p {
+      font-size: 20px;
+      padding: 5px;
+    }
+    .titre {
+      gap: 2rem;
+    }
+  }
+  
+  @media (min-width: 600px) and (max-width: 899px) {
+    section {
+      grid-template-columns: repeat(2, 1fr);
+      height: auto;
+    }
+    .img {
+      height: 400px;
+    }
+    .h1 {
+      font-size: 60px;
+    }
+    .p {
+      font-size: 30px;
+    }
+  }
+  
+  @media (min-width: 900px) {
+    section {
+      grid-template-columns: repeat(3, 1fr);
+    }
+    .img {
+      height: 670px;
+    }
+    .h1 {
+      font-size: 100px;
+    }
+    .p {
+      font-size: 50px;
+    }
+  }
